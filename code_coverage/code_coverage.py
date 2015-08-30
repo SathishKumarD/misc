@@ -1,3 +1,4 @@
+
 import random
 import os
 
@@ -7,7 +8,9 @@ import os
 # dst - destination folder in which the code coverage files to be stored
 # probabilities - list of probabilities. 0.05 means 5 percent of lines will be covered
 def generate_coverage_files(n_files,probabilities,src,dst):
-    src = open(src_file).read()
+    src_file_ptr = open(src_file)
+    src = src_file_ptr.read()
+    src_file_ptr.close()
     for x in range(n_files):
         cvsrc=''
         for line in src.split('\n'):
@@ -45,7 +48,9 @@ def get_coverage_detail(coverage_directory,extension):
     for filepath in filepaths:
         file_ornum=0
         sum_of_ones = 0
-        filestr = open(filepath).read()
+        file_ptr = open(filepath)
+        filestr = file_ptr.read()
+        file_ptr.close()
         line_counter = 0
         for line in filestr.split('\n'):
             if line.strip()!='':
@@ -115,7 +120,7 @@ def get_test_case_files(coverage_dir,extension):
             return test_files
         
 
-probabilities = [0.5,0.3,0.2,0.1,0.01]
+probabilities = [0.3,0.2,0.1,0.01]
 no_of_files = 500
 src_file = '/Users/sathish/Desktop/cov/src.txt'
 dst_path = '/Users/sathish/Desktop/cov/coverage'
