@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[6]:
-
 import random
 import os
 
@@ -129,9 +124,3 @@ test_files = get_test_case_files(dst_path,'.txt')
 
 for test_file in test_files:
     print test_file
-
-
-# In[ ]:
-
-
-
