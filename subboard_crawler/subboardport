@@ -1,0 +1,15 @@
+Hello all, 
+A couple of months before when we were searching for an apartment to rent for the final fall semester, we could not find any apartment for 6 months lease. To find out if there is really any apartment available for 6 months lease I wrote a python script to crawl suboard website to get all the listings (Sadly there was no apartment available for six months lease). Since there are so many people searching apartments now and searching apt in subbaord is a pain in the butt, I thought I would share the doc that I created by scrapping subboard website. 
+https://goo.gl/YYbRrf
+
+For the curious:
+This the the code base. I will keep on updating this script. If you are interested feel free to contribute.
+github repo: https://goo.gl/zxmsLO
+
+For the crazy curious:
+When we ( Kaushik Raj and me) were discussing about this, we thought why not we do this as a project. I mean seriously, why not?
+
+Countless hours are being wasted to search craiglist and subboard
+Ask for reviews from seniors about the house
+Bed bugs? landlords friendly or batshit crazy? Insulation? distance to nearest busstop? How the heck can I compare one apt with another? 
+If you have any inputs and want to contribute, please contant me or Kaushik Raj Palanichamy. You are welcome onboard. 
